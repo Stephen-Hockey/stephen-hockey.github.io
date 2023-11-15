@@ -54,7 +54,7 @@
     list-style: none;
     display: inline-block;
     margin-left: 2em;
-    transition: transform 0.2s;
+    transition: transform 0.1s;
 }
 
 .nav ul li a {
@@ -63,13 +63,20 @@
     padding: 1em;
     font-size: 1em;
     text-transform: uppercase;
-    transition: text-shadow 0.2s;
 }
 
 .nav ul li:hover {
-    transform: translateY(-0.5em);
+    transform: rotate(-15deg);
 }
 
 .nav ul li:hover a {
-    text-shadow: 0 0 1em greenyellow;
+    color: red;
+}
+
+.nav ul li.current:hover {
+    transform: rotate(-15deg) scale(1.2);
+}
+
+.nav ul li.current {
+    transform: rotate(-15deg) scale(1.2);
 }
