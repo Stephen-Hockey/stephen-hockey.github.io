@@ -1,0 +1,10 @@
+// Honestly ChatGPT helped out but I plan to understand how exactly fetch, and especially 'then' works.
+function addNewsItem() {
+    fetch("news-item.html")
+        .then((response) => response.text())
+        .then((html) => {
+            console.log(html);
+            document.getElementById("news").innerHTML += html;
+        })
+        .catch((error) => console.error("Error:", error));
+}
