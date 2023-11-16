@@ -7,18 +7,26 @@
 .main-container {
     min-height: 100vh;
     background: whitesmoke;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
-    padding-top: 5em; /*prevents overlap with navbar*/
+    padding: 5em 2.5em; /* top must be at least 5em to prevent navbar overlap*/
     box-sizing: border-box;
+}
+
+.home-container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
 
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .welcome {
-    max-width: 35em;
-    text-align: left;
+    width: 35em;
+    text-align: justify;
+    text-align-last: center;
 }
 
 .welcome * {
@@ -32,4 +40,22 @@
 
 .clickable-container {
     cursor: pointer;
+}
+
+/*----------------------------------------------------------------------------*/
+
+.resume {
+    width: 100%;
+    max-width: 75em;
+    height: 80em;
+    margin: 2em 0;
+}
+
+a {
+    text-decoration: none;
+    color: purple;
+}
+
+.text-hyperlink:hover {
+    text-decoration: underline;
 }
