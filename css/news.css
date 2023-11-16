@@ -14,7 +14,7 @@
     width: 30em;
     padding: 1em;
     margin: 0.5em 0 0.5em 0em;
-    background: linear-gradient(90deg, transparent 25%, black 80%);
+    background: linear-gradient(90deg, transparent 10%, black 90%);
     border-radius: 1em;
     display: flex;
     align-items: center;
@@ -55,4 +55,7 @@
 .clickable-container:hover .news-item {
     transform: translateX(-1em);
     margin-left: 1em;
+}
+.clickable-container:hover .news-item-text {
+    color: white; /*unused*/
 }

@@ -29,3 +29,7 @@
     font-style: italic;
     text-decoration: line-through;
 }
+
+.clickable-container {
+    cursor: pointer;
+}

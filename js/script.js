@@ -3,8 +3,12 @@ function addNewsItem() {
     fetch("news_item.html")
         .then((response) => response.text())
         .then((html) => {
-            console.log(html);
             document.getElementById("news").innerHTML += html;
         })
         .catch((error) => console.error("Error:", error));
 }
+addNewsItem();
+addNewsItem();
+addNewsItem();
+addNewsItem();
+addNewsItem();
