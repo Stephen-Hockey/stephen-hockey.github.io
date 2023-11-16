@@ -1,6 +1,6 @@
 // Honestly ChatGPT helped out but I plan to understand how exactly fetch, and especially 'then' works.
 function addNewsItem() {
-    fetch("news-item.html")
+    fetch("news_item.html")
         .then((response) => response.text())
         .then((html) => {
             console.log(html);
