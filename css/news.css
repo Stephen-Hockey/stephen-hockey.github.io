@@ -58,7 +58,3 @@
 .news-item-container:hover {
     margin-left: 0;
 }
-
-.news-item-container:hover .news-item-text {
-    color: white; /*unused*/
-}

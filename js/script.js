@@ -7,6 +7,9 @@ function addNewsItem() {
         })
         .catch((error) => console.error("Error:", error));
 }
+
+function showNavMenu() {}
+
 addNewsItem();
 addNewsItem();
 addNewsItem();

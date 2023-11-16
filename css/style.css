@@ -48,8 +48,12 @@
     margin-left: 1rem;
 }
 
-.flex1 {
-    flex: 1;
+.main-axis-left {
+    justify-content: flex-start;
+}
+
+.main-axis-left {
+    justify-content: flex-end;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -70,13 +74,27 @@ a {
     text-decoration: underline;
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 65em) {
     .site-name {
         display: none;
     }
+}
+
+@media (max-width: 50em) {
+    .nav {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
     .home-container {
         flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
+
     #news {
         align-items: center;
     }

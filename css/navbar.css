@@ -2,9 +2,10 @@
     height: 5em;
     width: 100%;
     position: fixed;
-    z-index: 9999; /* is this good practice */
+    /* z-index: 9999; is this good practice */
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     background: white;
 }
 
@@ -27,8 +28,13 @@
 }
 
 .nav {
-    flex: 1;
-    text-align: right;
+    margin-left: auto;
+}
+
+.nav-menu {
+    display: none;
+    margin-left: auto;
+    cursor: pointer;
 }
 
 .nav li {
