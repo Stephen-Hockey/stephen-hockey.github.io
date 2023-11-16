@@ -5,6 +5,11 @@
     /* background: linear-gradient(rgba(255, 72, 72, 0.5), rgba(72, 72, 255, 0.5)); */
 }
 
+a {
+    text-decoration: none;
+    color: purple;
+}
+
 .main-container {
     min-height: 100vh;
     background: whitesmoke;
@@ -48,26 +53,11 @@
     margin-left: 1rem;
 }
 
-.main-axis-left {
-    justify-content: flex-start;
-}
-
-.main-axis-left {
-    justify-content: flex-end;
-}
-
-/*----------------------------------------------------------------------------*/
-
 .resume {
     width: 100%;
     max-width: 75em;
     height: 80em;
     margin: 2em 0;
-}
-
-a {
-    text-decoration: none;
-    color: purple;
 }
 
 .text-hyperlink:hover {
@@ -85,8 +75,12 @@ a {
         display: none;
     }
 
-    .nav-menu {
+    .nav-menu-btn {
         display: block;
+    }
+
+    #nav-menu.visible {
+        display: flex;
     }
 
     .home-container {

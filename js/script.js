@@ -8,7 +8,10 @@ function addNewsItem() {
         .catch((error) => console.error("Error:", error));
 }
 
-function showNavMenu() {}
+function toggleNavMenu() {
+    var navMenu = document.getElementById("nav-menu");
+    navMenu.classList.toggle("visible");
+}
 
 addNewsItem();
 addNewsItem();

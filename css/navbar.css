@@ -31,12 +31,6 @@
     margin-left: auto;
 }
 
-.nav-menu {
-    display: none;
-    margin-left: auto;
-    cursor: pointer;
-}
-
 .nav li {
     list-style: none;
     display: inline-block;
@@ -63,6 +57,17 @@
 
 .nav li.current:hover p {
     transform: rotate(-15deg) scale(1.2);
+}
+
+.nav-menu-btn {
+    display: none;
+    margin-left: auto;
+    padding: 1em;
+    cursor: pointer;
+}
+
+#nav-menu {
+    display: none;
 }
 
 @keyframes transform-on-load {
