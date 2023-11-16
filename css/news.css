@@ -1,5 +1,5 @@
 #news {
-    width: 35em;
+    max-width: 30em;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -10,8 +10,7 @@
 }
 
 .news-item {
-    height: 6em;
-    width: 30em;
+    min-height: 6em;
     padding: 1em;
     margin: 0.5em 0 0.5em 0em;
     background: linear-gradient(90deg, transparent 10%, black 90%);
@@ -31,13 +30,12 @@
 
 .thumbnail img {
     width: 100%;
-    object-fit: cover;
     border-radius: 0.5em;
     display: block;
 }
 
 .news-item-text {
-    width: 50%;
+    max-width: 50%;
     color: white;
     text-align: right;
     word-wrap: break-word;
@@ -52,10 +50,15 @@
     font-style: italic;
 }
 
-.clickable-container:hover .news-item {
-    transform: translateX(-1em);
-    margin-left: 1em;
+.news-item-container:hover .news-item {
+    transform: translateX(-1rem);
+    margin-left: 1rem;
 }
-.clickable-container:hover .news-item-text {
+
+.news-item-container:hover {
+    margin-left: 0;
+}
+
+.news-item-container:hover .news-item-text {
     color: white; /*unused*/
 }
