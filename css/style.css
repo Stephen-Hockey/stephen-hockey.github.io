@@ -71,6 +71,9 @@ a {
 }
 
 @media (max-width: 40rem) {
+    .site-name {
+        display: none;
+    }
     .home-container {
         flex-direction: column;
     }
