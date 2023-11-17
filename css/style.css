@@ -2,12 +2,19 @@
     margin: 0;
     padding: 0;
     font-family: "Courier New", Courier, monospace;
-    /* background: linear-gradient(rgba(255, 72, 72, 0.5), rgba(72, 72, 255, 0.5)); */
 }
 
 a {
     text-decoration: none;
     color: purple;
+}
+
+a > * {
+    user-select: none;
+}
+
+ul {
+    list-style: none;
 }
 
 .main-container {
@@ -80,7 +87,7 @@ a {
     }
 
     #nav-menu.visible {
-        display: flex;
+        transform: translateY(0);
     }
 
     .home-container {
