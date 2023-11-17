@@ -17,26 +17,24 @@ ul {
     list-style: none;
 }
 
-.main-container {
+.base-container {
     min-height: 100vh;
     background: whitesmoke;
     padding: 5em 2.5em; /* top must be at least 5em to prevent navbar overlap*/
     box-sizing: border-box;
 }
 
-.home-container {
+.home-page-container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
 
-.resume-container {
+.resume-page-container,
+.projects-page-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.projects-container {
 }
 
 .welcome {
@@ -90,7 +88,7 @@ ul {
         transform: translateY(0);
     }
 
-    .home-container {
+    .home-page-container {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
