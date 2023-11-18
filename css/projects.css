@@ -1,2 +1,44 @@
+.first {
+    order: -1;
+}
+
+.mirroredX {
+    scale: -1 1;
+}
+
+.scroll-link-container {
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.icon {
+    width: 4rem;
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+
+.icon img {
+    width: 100%;
+    display: block;
+}
+
 .scroll-link {
+    padding: 2em;
+    margin: 0 1em;
+    color: black;
+    border-radius: 1em;
+    text-align: center;
+}
+
+.scroll-link:hover {
+    color: purple;
+}
+
+.scroll-link-container.rotate .scroll-link:hover ~ .icon {
+    transform: rotate(-45deg);
+}
+
+.scroll-link-container .icon {
+    transition: transform 0.2s;
 }

@@ -1,5 +1,5 @@
 #news {
-    max-width: 30em;
+    max-width: 25em;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -11,7 +11,6 @@
 }
 
 .news-item {
-    min-height: 6em;
     padding: 1em;
     margin: 0.5em 0 0.5em 0em;
     background: linear-gradient(90deg, transparent 10%, black 90%);
@@ -25,25 +24,29 @@
 }
 
 .thumbnail {
-    width: 45%;
-    margin-right: 5%;
+    width: 8em;
+    height: 6em;
+    margin-right: 1em;
+    flex: 0 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .thumbnail img {
-    width: 100%;
+    height: 100%;
     border-radius: 0.5em;
     display: block;
 }
 
 .news-item-text {
-    max-width: 50%;
     color: white;
     text-align: right;
-    word-wrap: break-word;
 }
 
 .news-item-text h2 {
     font-size: 1.25em;
+    word-wrap: break-word;
 }
 
 .news-item-text h3 {
