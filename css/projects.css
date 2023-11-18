@@ -31,6 +31,10 @@
     text-align: center;
 }
 
+.scroll-link-container .icon {
+    transition: transform 0.2s;
+}
+
 .scroll-link:hover {
     color: purple;
 }
@@ -39,6 +43,14 @@
     transform: rotate(-45deg);
 }
 
-.scroll-link-container .icon {
-    transition: transform 0.2s;
+.scroll-link-container.shift .scroll-link:hover ~ .icon {
+    transform: translateX(-2em);
+}
+
+.scroll-link-container.flip .scroll-link:hover ~ .icon {
+    transform: scale(-1, 1);
+}
+
+.project {
+    padding-top: 5em;
 }
