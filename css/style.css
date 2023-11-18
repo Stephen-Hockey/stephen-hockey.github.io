@@ -9,12 +9,16 @@ a {
     color: purple;
 }
 
-a > * {
-    user-select: none;
-}
-
 ul {
     list-style: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+a > * {
+    user-select: none;
 }
 
 .base-container {
@@ -42,10 +46,11 @@ ul {
     min-width: 17.5em;
     text-align: justify;
     text-align-last: center;
+    margin-top: 2rem;
 }
 
 .welcome * {
-    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .unserious {
@@ -63,10 +68,6 @@ ul {
     max-width: 75em;
     height: 80em;
     margin: 2em 0;
-}
-
-.text-hyperlink:hover {
-    text-decoration: underline;
 }
 
 @media (max-width: 65em) {
