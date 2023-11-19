@@ -16,7 +16,6 @@
 
 .logo {
     width: 6em;
-    display: block;
 }
 
 .site-name h1 {
@@ -83,7 +82,10 @@
     margin-left: auto;
     padding: 1em;
     cursor: pointer;
-    transition: transform 0.2 ease-out;
+}
+
+.nav-menu-btn:hover {
+    color: purple;
 }
 
 @keyframes transform-on-load {

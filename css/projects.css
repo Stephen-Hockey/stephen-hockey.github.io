@@ -12,17 +12,6 @@
     margin: 1em 0;
 }
 
-.icon {
-    width: 4rem;
-    overflow: hidden;
-    flex: 0 0 auto;
-}
-
-.icon img {
-    width: 100%;
-    display: block;
-}
-
 .scroll-link {
     padding: 2em;
     margin: 0 1em;
@@ -33,6 +22,7 @@
 
 .scroll-link-container .icon {
     transition: transform 0.2s;
+    flex: 0 0 auto;
 }
 
 .scroll-link:hover {
@@ -52,5 +42,86 @@
 }
 
 .project {
-    padding-top: 5em;
+    padding: 6rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-column,
+.image-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    max-width: 35em;
+    overflow: hidden;
+}
+
+.text-column {
+    padding-right: 1em;
+}
+
+.project h2 {
+    font-size: 50pt;
+    margin-bottom: 0.25em;
+}
+
+.project p {
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+}
+
+.skill {
+    padding: 0.5em;
+    margin-right: 1em;
+    font-weight: bold;
+    color: whitesmoke;
+    background: grey;
+    /* border: 0.1em solid gray; */
+    border-radius: 9999em; /* I'm sure there is a better way to get a circular left and right sides but this works for now, using a percentage turned it into a circle */
+}
+
+.project-image {
+    width: 100%;
+}
+
+.project-actions {
+    padding: 1em 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.github-link {
+    margin-right: auto;
+}
+
+.download-button {
+    font-size: 20pt;
+    padding: 0.5em;
+    margin: 0.5em;
+    display: flex;
+    text-wrap: nowrap;
+    border: 0.1em solid black;
+    border-radius: 1em;
+    background: white;
+}
+
+.download-button:hover {
+    color: purple;
+    cursor: pointer;
+}
+
+.download-button::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+    background: url("/public/images/download.png");
+    background-size: cover;
 }

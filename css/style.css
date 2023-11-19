@@ -25,6 +25,10 @@ a > * {
     user-select: none;
 }
 
+img {
+    display: block;
+}
+
 .base-container {
     min-height: 100vh;
     background: whitesmoke;
@@ -47,7 +51,6 @@ a > * {
 
 .welcome {
     max-width: 35em;
-    min-width: 17.5em;
     text-align: justify;
     text-align-last: center;
     margin-top: 2rem;
@@ -60,6 +63,15 @@ a > * {
 .unserious {
     font-style: italic;
     text-decoration: line-through;
+}
+
+.icon {
+    width: 3rem;
+    overflow: hidden;
+}
+
+.icon img {
+    width: 100%;
 }
 
 .news-item-container {
@@ -78,6 +90,38 @@ a > * {
     .site-name {
         display: none;
     }
+
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-column,
+    .image-column {
+        width: 100%;
+        max-width: 20em;
+        align-items: center;
+    }
+
+    .text-column {
+        padding: 0;
+    }
+
+    .project h2 {
+        font-size: 30pt;
+    }
+
+    .project p {
+        text-align-last: center;
+    }
+
+    .project-actions {
+        flex-direction: column;
+    }
+
+    .github-link {
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 50em) {
@@ -86,7 +130,7 @@ a > * {
     }
 
     .nav-menu-btn {
-        display: block;
+        display: flex; /* just makes it visible */
     }
 
     #nav-menu.visible {
