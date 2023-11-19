@@ -99,3 +99,23 @@
         transform: rotate(-15deg) scale(1.2);
     }
 }
+
+@media (max-width: 65em) {
+    .site-name {
+        display: none;
+    }
+}
+
+@media (max-width: 50em) {
+    .nav {
+        display: none;
+    }
+
+    .nav-menu-btn {
+        display: flex; /* just makes it visible */
+    }
+
+    #nav-menu.visible {
+        transform: translateY(0);
+    }
+}

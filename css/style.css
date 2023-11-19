@@ -87,63 +87,12 @@ img {
 }
 
 @media (max-width: 65em) {
-    .site-name {
-        display: none;
-    }
-
-    .project {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .text-column,
-    .image-column {
-        width: 100%;
-        max-width: 20em;
-        align-items: center;
-    }
-
-    .text-column {
-        padding: 0;
-    }
-
-    .project h2 {
-        font-size: 30pt;
-    }
-
-    .project p {
-        text-align-last: center;
-    }
-
-    .project-actions {
-        flex-direction: column;
-    }
-
-    .github-link {
-        margin-right: 0;
-    }
 }
 
 @media (max-width: 50em) {
-    .nav {
-        display: none;
-    }
-
-    .nav-menu-btn {
-        display: flex; /* just makes it visible */
-    }
-
-    #nav-menu.visible {
-        transform: translateY(0);
-    }
-
     .home-page-container {
         flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
-    }
-
-    #news {
         align-items: center;
     }
 }

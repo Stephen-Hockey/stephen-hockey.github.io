@@ -42,31 +42,33 @@
 }
 
 .project {
-    padding: 6rem 0;
+    padding-top: 6rem;
     display: flex;
     justify-content: space-between;
 }
 
 .text-column,
 .image-column {
-    width: 50%;
+    width: 47.5%;
+    max-width: 35em;
+    padding: 0 1.25%;
     display: flex;
     flex-direction: column;
-    max-width: 35em;
     overflow: hidden;
 }
 
-.text-column {
-    padding-right: 1em;
+.text-column.right-aligned {
+    align-items: flex-end;
 }
 
 .project h2 {
     font-size: 50pt;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.1em;
 }
 
 .project p {
     text-align: justify;
+    text-align-last: center;
     margin-bottom: 1em;
 }
 
@@ -76,13 +78,17 @@
 }
 
 .skill {
-    padding: 0.5em;
+    padding: 0.5em 1em;
     margin-right: 1em;
     font-weight: bold;
     color: whitesmoke;
     background: grey;
-    /* border: 0.1em solid gray; */
-    border-radius: 9999em; /* I'm sure there is a better way to get a circular left and right sides but this works for now, using a percentage turned it into a circle */
+    border-radius: 9999em; /* I'm sure there is a better way to get a circular left and right sides but this works for now, using a percentage turned it into an ellipse */
+}
+
+.right-aligned .skill {
+    margin-right: 0;
+    margin-left: 1em;
 }
 
 .project-image {
@@ -104,7 +110,7 @@
 .download-button {
     font-size: 20pt;
     padding: 0.5em;
-    margin: 0.5em;
+    margin-left: 1em;
     display: flex;
     text-wrap: nowrap;
     border: 0.1em solid black;
@@ -124,4 +130,45 @@
     margin-right: 0.5em;
     background: url("/public/images/download.png");
     background-size: cover;
+}
+
+@media (max-width: 65em) {
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-column,
+    .text-column.right-aligned,
+    .image-column {
+        width: 100%;
+        max-width: 20em;
+        align-items: center;
+    }
+
+    .image-column {
+        order: 0;
+    }
+
+    .skill,
+    .right-aligned .skill {
+        margin: 0.5em;
+    }
+
+    .project h2 {
+        font-size: 36pt;
+    }
+
+    .project-actions {
+        flex-direction: column;
+    }
+
+    .github-link {
+        margin: 0;
+    }
+
+    .download-button {
+        margin-left: 0;
+        margin-top: 1em;
+    }
 }

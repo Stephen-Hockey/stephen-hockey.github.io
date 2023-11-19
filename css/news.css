@@ -61,3 +61,9 @@
 .news-item-container:hover {
     margin-left: 0;
 }
+
+@media (max-width: 50em) {
+    #news {
+        align-items: center;
+    }
+}
