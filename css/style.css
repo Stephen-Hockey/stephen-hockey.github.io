@@ -43,7 +43,8 @@ img {
 }
 
 .resume-page-container,
-.projects-page-container {
+.projects-page-container,
+.about-page-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,6 +73,19 @@ img {
 
 .icon img {
     width: 100%;
+}
+
+.portrait {
+    width: 100%;
+    max-width: 40em;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+.portrait img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
 }
 
 .news-item-container {
