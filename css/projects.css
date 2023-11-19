@@ -30,7 +30,7 @@
 }
 
 .scroll-link-container.rotate .scroll-link:hover ~ .icon {
-    transform: rotate(-45deg);
+    transform: rotate(-90deg);
 }
 
 .scroll-link-container.shift .scroll-link:hover ~ .icon {
