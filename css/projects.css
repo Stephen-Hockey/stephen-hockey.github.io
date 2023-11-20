@@ -68,12 +68,22 @@
 .project h2 {
     font-size: 50pt;
     margin-bottom: 0.1em;
+    text-align: left;
+}
+
+.project .right-aligned h2 {
+    font-size: 50pt;
+    margin-bottom: 0.1em;
+    text-align: right;
 }
 
 .project p {
     text-align: justify;
-    text-align-last: center;
     margin-bottom: 1em;
+}
+
+.project .right-aligned p {
+    text-align-last: right;
 }
 
 .skills {
@@ -159,6 +169,11 @@
 
     .project h2 {
         font-size: 36pt;
+        text-align: center;
+    }
+
+    .project p {
+        text-align-last: center;
     }
 
     .project-actions {
