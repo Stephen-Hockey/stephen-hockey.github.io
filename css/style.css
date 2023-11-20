@@ -108,6 +108,11 @@ img {
     text-decoration: line-through;
 }
 
+.disappointed {
+    font-style: italic;
+    color: grey;
+}
+
 .icon {
     width: 3rem;
     overflow: hidden;
