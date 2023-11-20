@@ -72,8 +72,6 @@
 }
 
 .project .right-aligned h2 {
-    font-size: 50pt;
-    margin-bottom: 0.1em;
     text-align: right;
 }
 
@@ -163,8 +161,8 @@
     .skill,
     .right-aligned .skill {
         margin: 0.5em;
-        justify-content: center !important;
-        align-items: center !important;
+        justify-content: center;
+        align-items: center;
     }
 
     .project h2 {

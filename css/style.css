@@ -61,7 +61,7 @@ img {
 /* note that the urls have to set before the other properties */
 
 .github::before {
-    background: url("/public/images/ph.png");
+    background: url("/public/images/github-icon.png");
 }
 
 .linkedin::before {
@@ -101,6 +101,13 @@ img {
 
 .welcome h1 {
     text-align: center;
+}
+
+.footer {
+    padding: 1em;
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
 }
 
 .unserious {
