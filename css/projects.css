@@ -116,7 +116,7 @@
     margin-right: auto;
 }
 
-.download-button {
+.project-actions .download {
     font-size: 20pt;
     padding: 0.5em;
     margin-left: 1em;
@@ -127,18 +127,9 @@
     background: white;
 }
 
-.download-button:hover {
+.project-actions .download:hover {
     color: purple;
     cursor: pointer;
-}
-
-.download-button::before {
-    content: "";
-    width: 1em;
-    height: 1em;
-    margin-right: 0.5em;
-    background: url("/public/images/download.png");
-    background-size: cover;
 }
 
 @media (max-width: 65em) {
@@ -179,7 +170,7 @@
         margin-top: 0.5em;
     }
 
-    .download-button {
+    .project-actions .download {
         margin-left: 0;
         margin-top: 0.5em;
     }

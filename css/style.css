@@ -17,7 +17,8 @@ ul {
     list-style: none;
 }
 
-p a:hover {
+p a:hover,
+.contact:hover {
     text-decoration: underline;
 }
 
@@ -44,11 +45,44 @@ img {
 
 .resume-page-container,
 .projects-page-container,
-.about-page-container,
-.contact-page-container {
+.about-page-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.contact {
+    font-size: 15pt;
+    padding: 0.2em;
+    display: flex;
+    border-radius: 0.5em;
+}
+
+/* note that the urls have to set before the other properties */
+
+.github::before {
+    background: url("/public/images/ph.png");
+}
+
+.linkedin::before {
+    background: url("/public/images/ph_s.png");
+}
+
+.email::before {
+    background: url("/public/images/yt.png");
+}
+
+.download::before {
+    background: url("/public/images/download.png");
+}
+
+.contact::before,
+.download::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+    background-size: cover;
 }
 
 .welcome {
@@ -56,6 +90,9 @@ img {
     text-align: justify;
     text-align-last: center;
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .welcome * {
