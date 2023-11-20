@@ -61,19 +61,19 @@ img {
 /* note that the urls have to set before the other properties */
 
 .github::before {
-    background: url("/public/images/github-icon.png");
+    background: url("/media/images/github-icon.png");
 }
 
 .linkedin::before {
-    background: url("/public/images/linkedin-icon.png");
+    background: url("/media/images/linkedin-icon.png");
 }
 
 .email::before {
-    background: url("/public/images/mail-icon.png");
+    background: url("/media/images/mail-icon.png");
 }
 
 .download::before {
-    background: url("/public/images/download.png");
+    background: url("/media/images/download.png");
 }
 
 .contact::before,
