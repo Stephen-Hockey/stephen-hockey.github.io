@@ -108,6 +108,7 @@ img {
     background: whitesmoke;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .unserious {
