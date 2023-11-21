@@ -55,7 +55,7 @@ img {
     font-size: 15pt;
     padding: 0.2em;
     display: flex;
-    border-radius: 0.5em;
+    align-items: center;
 }
 
 /* note that the urls have to set before the other properties */
@@ -109,6 +109,11 @@ img {
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+.footer .contact {
+    flex-direction: column-reverse;
+    font-size: 12pt;
 }
 
 .unserious {
