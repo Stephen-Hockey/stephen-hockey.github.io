@@ -40,7 +40,7 @@ img {
 .home-page-container {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .resume-page-container,
