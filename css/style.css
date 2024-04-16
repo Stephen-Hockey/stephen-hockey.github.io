@@ -33,7 +33,7 @@ img {
 .base-container {
     min-height: 100vh;
     background: whitesmoke;
-    padding: 5rem 2.5em; /* top must be at least 5em to prevent navbar overlap*/
+    padding: 5rem 2.5em 0; /* top must be at least 5em to prevent navbar overlap*/
     box-sizing: border-box;
 }
 

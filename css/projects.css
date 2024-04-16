@@ -41,6 +41,10 @@
     transform: scale(-1, 1);
 }
 
+.scroll-link-container.squash .scroll-link:hover ~ .icon {
+    transform: scale(1.25, 0.75);
+}
+
 .project {
     padding-top: 6rem;
     display: flex;
