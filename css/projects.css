@@ -171,11 +171,12 @@ p.skill {
         align-items: center;
     }
 
-    .project h2 {
+    .project h2,
+    .project .right-aligned h2  {
         font-size: 36pt;
         text-align: center;
     }
-
+    
     .project p {
         text-align-last: center;
     }
