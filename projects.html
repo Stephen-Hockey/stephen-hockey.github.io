@@ -61,6 +61,24 @@
             <div class="welcome">
                 <h1>My Projects</h1>
             </div>
+            <div class="scroll-link-container rotate">
+                <a class="scroll-link" href="#otherkind-project">
+                    Full-Stack React App
+                </a>
+                <!-- Out of order because it seems there is no way to select previous sibling -->
+                <div class="icon first">
+                    <img
+                        src="media/images/react_icon.png"
+                        alt="React Icon"
+                    />
+                </div>
+                <div class="icon mirroredX">
+                    <img
+                        src="media/images/react_icon.png"
+                        alt="React Icon"
+                    />
+                </div>
+            </div>
             <div class="scroll-link-container squash">
                 <a class="scroll-link" href="#gardeners-grove-project">
                     Garden Planner/Manager & Social Networking Site
@@ -113,6 +131,44 @@
                 </div>
             </div>
             <div class="projects-container">
+                <div id="otherkind-project" class="project">
+                    <div class="text-column">
+                        <h2>OtherKind</h2>
+                        <div class="skills">
+                            <p class="skill">React</p>
+                            <p class="skill">TypeScript</p>
+                            <p class="skill">Full-Stack</p>
+                        </div>
+                        <p>
+                            A web app made in two parts. I built a RESTful API then 
+                            developed the front-end using React. Both the front and back end were written in TypeScript. 
+                            Users can explore, support and create petitions.
+                        </p>
+                    </div>
+                    
+                    <div class="image-column first">
+                        <img
+                            class="project-image"
+                            src="media/images/otherkind.png"
+                            alt="Gardener's Grove"
+                        />
+                        <div class="project-actions">
+                            <a
+                                class="outgoing-link margin-right-auto"
+                                href="https://github.com/Stephen-Hockey/otherkind"
+                            >
+                                <img
+                                    class="icon"
+                                    src="media/images/github-icon.png"
+                                    alt="Github Icon"
+                                />
+                            </a>
+                            <a href="downloads/otherkind_source_code.zip">
+                                <button class="download">Source</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div id="gardeners-grove-project" class="project">
                     <div class="text-column right-aligned">
                         <h2>Gardener's Grove</h2>
@@ -132,11 +188,11 @@
                             plant identification from images, booking & invoicing functionality for commercial gardeners AND MORE!
                         </p>
                     </div>
-                    <div class="image-column first">
+                    <div class="image-column">
                         <img
                             class="project-image"
                             src="media/images/gardenersGrove.png"
-                            alt="Gardener's Grove"
+                            alt="OtherKind"
                         />
                     </div>
                 </div>
@@ -159,7 +215,7 @@
                             competitors.
                         </p>
                     </div>
-                    <div class="image-column">
+                    <div class="image-column first">
                         <img
                             class="project-image"
                             src="media/images/volleymania.png"
@@ -207,7 +263,7 @@
                             choice.
                         </p>
                     </div>
-                    <div class="image-column first">
+                    <div class="image-column">
                         <img
                             class="project-image"
                             src="media/images/drivewise.png"
@@ -251,7 +307,7 @@
                             pitch and your swing to outplay your opponent
                         </p>
                     </div>
-                    <div class="image-column">
+                    <div class="image-column first">
                         <img
                             class="project-image"
                             src="media/images/ucfk4.jpg"
