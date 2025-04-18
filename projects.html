@@ -79,9 +79,27 @@
                     />
                 </div>
             </div>
+            <div class="scroll-link-container rotate">
+                <a class="scroll-link" href="#pinball-project">
+                    Physics-Based Pinball Game with Rust, WebAssembly, and React
+                </a>
+                <!-- Out of order because it seems there is no way to select previous sibling -->
+                <div class="icon first">
+                    <img
+                        src="media/images/pinball_paddle.png"
+                        alt="Pinball Paddle"
+                    />
+                </div>
+                <div class="icon mirroredX">
+                    <img
+                        src="media/images/pinball_paddle.png"
+                        alt="Pinball Paddle"
+                    />
+                </div>
+            </div>
             <div class="scroll-link-container squash">
                 <a class="scroll-link" href="#gardeners-grove-project">
-                    Garden Planner/Manager & Social Networking Site
+                    Garden Manager & Social Networking Site
                 </a>
                 <div class="icon first">
                     <img src="media/images/flower.png" alt="Plant Icon" />
@@ -132,7 +150,7 @@
             </div>
             <div class="projects-container">
                 <div id="otherkind-project" class="project">
-                    <div class="text-column">
+                    <div class="text-column right-aligned">
                         <h2>OtherKind</h2>
                         <div class="skills">
                             <p class="skill">React</p>
@@ -146,7 +164,7 @@
                         </p>
                     </div>
                     
-                    <div class="image-column first">
+                    <div class="image-column">
                         <img
                             class="project-image"
                             src="media/images/otherkind.png"
@@ -164,6 +182,45 @@
                                 />
                             </a>
                             <a href="downloads/otherkind_source_code.zip">
+                                <button class="download">Source</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="pinball-project" class="project">
+                    <div class="text-column">
+                        <h2>Pinball</h2>
+                        <div class="skills">
+                            <p class="skill">Rust + WASM</p>
+                            <p class="skill">Three.js</p>
+                            <p class="skill">React</p>
+                            <p class="skill">TypeScript</p>
+                        </div>
+                        <p>
+                            A web app primarily written in Rust and compiled to WebAssembly that uses
+                            the Rapier2D physics engine rendered in 3D with Three.js and a React frontend. 
+                            Play a fun game of pinball!
+                        </p>
+                    </div>
+                    
+                    <div class="image-column first">
+                        <img
+                            class="project-image"
+                            src="media/images/pinball.png"
+                            alt="Pinball"
+                        />
+                        <div class="project-actions">
+                            <a
+                                class="outgoing-link margin-right-auto"
+                                href="https://github.com/Stephen-Hockey/rust_wasm_pinball"
+                            >
+                                <img
+                                    class="icon"
+                                    src="media/images/github-icon.png"
+                                    alt="Github Icon"
+                                />
+                            </a>
+                            <a href="downloads/rust_wasm_pinball.zip">
                                 <button class="download">Source</button>
                             </a>
                         </div>
@@ -192,7 +249,7 @@
                         <img
                             class="project-image"
                             src="media/images/gardenersGrove.png"
-                            alt="OtherKind"
+                            alt="Gardener's Grove"
                         />
                     </div>
                 </div>
